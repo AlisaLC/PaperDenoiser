@@ -24,3 +24,5 @@ The models were trained using multiple losses. First we used weighted Mean Absou
 The models were quick to reconstruct dark areas but lacked the delicacy in close small dark dots like in letters (پ ش چ).
 Then a weighted MAE biased towards both black and white colors were used to fix this problem.
 Finally the training ended with normal MAE as the loss to balance the colors.
+## Web UI
+A simple web UI with `bootstrap` is in static files. After running `flask.ipynb` notebook, we can upload an image and download the denoised image in the browser. When paired with `ngrok` we can demo the models without physical access to the server with the GPU.
